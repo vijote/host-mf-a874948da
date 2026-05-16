@@ -5,12 +5,11 @@ module.exports = {
       name: 'vite_provider',
       manifest: true,
       remotes: {
-        esm_remote: {
+        recipes: {
           type: "module",
-          name: "esm_remote",
-          entry: "https://[...]/remoteEntry.js",
+          name: "recipes",
+          entry: "/apps/recipes/remoteEntry.js",
         },
-        var_remote: "var_remote@https://[...]/remoteEntry.js",
       },
       shared: {
         react: {
