@@ -4,6 +4,13 @@ on:
   push:
     branches:
       - main  # Trigger on push to main branch
+      
+  workflow_dispatch:
+    inputs:
+      id_entorno:
+        description: 'ID único del entorno efímero'
+        required: false
+        type: string
 
 env:
   AWS_REGION: ${{ vars.AWS_REGION }}
