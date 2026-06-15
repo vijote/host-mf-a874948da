@@ -4,7 +4,7 @@ const RemoteRecipeList = lazy(() => import('recipes/RecipeList'));
 function App() {
   return (
     <>
-      <h1>Host app v1!</h1>
+      <h1>Host app v2!</h1>
       <Suspense fallback={<div>Cargando módulo de recetas...</div>}>
         <RemoteRecipeList />
       </Suspense>
